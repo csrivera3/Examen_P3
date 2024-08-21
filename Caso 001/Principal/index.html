@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Inventarios</h1>
+        <form id="inventory-form">
+            <input type="text" id="product-name" placeholder="Nombre del producto" required>
+            <input type="number" id="product-quantity" placeholder="Cantidad" required>
+            <input type="number" id="product-price" placeholder="Precio" step="0.01" required>
+            <button type="submit" id="agregar-producto">Agregar Producto</button>
+        </form>
+        <h2>Productos en Inventario</h2>
+        <table id="tabla-inventario">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="inventory-list">
+                <!-- Los productos se mostrarán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+[
+  {
+    "uri": "feature/Pasos.feature",
+    "id": "gestionar-inventarios",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Gestionar Inventarios",
+    "description": "",
+    "elements": [
+      {
+        "id": "agregar-un-producto-exitosamente",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar un producto exitosamente",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "la aplicaci\u00f3n de inventarios est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 2.327298402786255
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "ingreso \"Producto A\" en el campo \"Nombre del Producto\"",
+            "result": {
+              "status": "failed",
+              "duration": 1.5502345561981201
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 6,
+            "name": "ingreso \"10\" en el campo \"Cantidad\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 7,
+            "name": "ingreso \"15.00\" en el campo \"Precio\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 8,
+            "name": "hago clic en \"Agregar Producto\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 9,
+            "name": "deber\u00eda ver el producto \"Producto A\" con cantidad \"10\" y precio \"15.00\" en la lista de inventario",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "intentar-agregar-un-producto-sin-nombre",
+        "line": 11,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Intentar agregar un producto sin nombre",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 12,
+            "name": "la aplicaci\u00f3n de inventarios est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 2.256833553314209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 13,
+            "name": "ingreso \"\" en el campo \"Nombre del Producto\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 14,
+            "name": "ingreso \"10\" en el campo \"Cantidad\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 15,
+            "name": "ingreso \"15.00\" en el campo \"Precio\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 16,
+            "name": "hago clic en \"Agregar Producto\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 17,
+            "name": "deber\u00eda ver un mensaje de error indicando que el nombre del producto es obligatorio",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "intentar-agregar-un-producto-con-cantidad-cero",
+        "line": 19,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Intentar agregar un producto con cantidad cero",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 20,
+            "name": "la aplicaci\u00f3n de inventarios est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 2.2701430320739746
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 21,
+            "name": "ingreso \"Producto B\" en el campo \"Nombre del Producto\"",
+            "result": {
+              "status": "failed",
+              "duration": 1.0341973304748535
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 22,
+            "name": "ingreso \"0\" en el campo \"Cantidad\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 23,
+            "name": "ingreso \"20.00\" en el campo \"Precio\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 24,
+            "name": "hago clic en \"Agregar Producto\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 25,
+            "name": "deber\u00eda ver un mensaje de error indicando que la cantidad debe ser mayor a cero",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "intentar-agregar-un-producto-con-precio-negativo",
+        "line": 27,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Intentar agregar un producto con precio negativo",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 28,
+            "name": "la aplicaci\u00f3n de inventarios est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 2.5633432865142822
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 29,
+            "name": "ingreso \"Producto C\" en el campo \"Nombre del Producto\"",
+            "result": {
+              "status": "failed",
+              "duration": 10.284071922302246
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 30,
+            "name": "ingreso \"5\" en el campo \"Cantidad\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 31,
+            "name": "ingreso \"-10.00\" en el campo \"Precio\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 32,
+            "name": "hago clic en \"Agregar Producto\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 33,
+            "name": "deber\u00eda ver un mensaje de error indicando que el precio debe ser un valor positivo",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "eliminar-un-producto-del-inventario",
+        "line": 35,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Eliminar un producto del inventario",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 36,
+            "name": "el producto \"Producto A\" est\u00e1 en la lista de inventario",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 37,
+            "name": "hago clic en \"Eliminar\" junto al producto \"Producto A\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 38,
+            "name": "el producto \"Producto A\" no deber\u00eda estar en la lista de inventario",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
