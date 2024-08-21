@@ -1,0 +1,302 @@
+[
+  {
+    "uri": "features/ventas.feature",
+    "id": "gestionar-ventas",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Gestionar Ventas",
+    "description": "",
+    "elements": [
+      {
+        "id": "realizar-una-venta-exitosa",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Realizar una venta exitosa",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "la aplicaci\u00f3n de ventas est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 3.412062406539917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "selecciono \"Producto 1\" en el campo \"producto\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.054396867752075195
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 6,
+            "name": "ingreso \"3\" en el campo \"cantidad\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.10722494125366211
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 7,
+            "name": "ingreso \"20.00\" en el campo \"precio\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.09720826148986816
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 8,
+            "name": "hago clic en \"Gestionar Venta\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.1899042129516602
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 9,
+            "name": "deber\u00eda ver un mensaje de \u00e9xito indicando que la venta se gestion\u00f3 correctamente",
+            "result": {
+              "status": "passed",
+              "duration": 0.3282756805419922
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 10,
+            "name": "el total deber\u00eda ser \"60.00\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.35744285583496094
+            }
+          }
+        ]
+      },
+      {
+        "id": "intentar-realizar-una-venta-sin-seleccionar-un-producto",
+        "line": 12,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Intentar realizar una venta sin seleccionar un producto",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 13,
+            "name": "la aplicaci\u00f3n de ventas est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 3.539475917816162
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 14,
+            "name": "selecciono \"\" en el campo \"producto\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 15,
+            "name": "ingreso \"3\" en el campo \"cantidad\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 16,
+            "name": "ingreso \"20.00\" en el campo \"precio\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 17,
+            "name": "hago clic en \"Gestionar Venta\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 18,
+            "name": "deber\u00eda ver un mensaje de error indicando que se debe seleccionar un producto",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "intentar-realizar-una-venta-con-cantidad-cero",
+        "line": 20,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Intentar realizar una venta con cantidad cero",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 21,
+            "name": "la aplicaci\u00f3n de ventas est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 3.4042112827301025
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 22,
+            "name": "selecciono \"Producto 1\" en el campo \"producto\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.06964516639709473
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 23,
+            "name": "ingreso \"0\" en el campo \"cantidad\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.07910346984863281
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 24,
+            "name": "ingreso \"20.00\" en el campo \"precio\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.09877181053161621
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 25,
+            "name": "hago clic en \"Gestionar Venta\"",
+            "result": {
+              "status": "passed",
+              "duration": 1.1526696681976318
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 26,
+            "name": "deber\u00eda ver un mensaje de error indicando que la cantidad debe ser mayor a cero",
+            "result": {
+              "status": "passed",
+              "duration": 0.3515625
+            }
+          }
+        ]
+      },
+      {
+        "id": "intentar-realizar-una-venta-con-precio-negativo",
+        "line": 28,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Intentar realizar una venta con precio negativo",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 29,
+            "name": "la aplicaci\u00f3n de ventas est\u00e1 abierta",
+            "result": {
+              "status": "passed",
+              "duration": 3.2635014057159424
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 30,
+            "name": "selecciono \"Producto 1\" en el campo \"producto\"",
+            "result": {
+              "status": "failed",
+              "duration": 2.8276724815368652
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 31,
+            "name": "ingreso \"3\" en el campo \"cantidad\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 32,
+            "name": "ingreso \"-5.00\" en el campo \"precio\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 33,
+            "name": "hago clic en \"Gestionar Venta\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 34,
+            "name": "deber\u00eda ver un mensaje de error indicando que el precio debe ser un valor positivo",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
